@@ -19,6 +19,6 @@ This is the dev transmitter used to build and send dummy telemetry packets. I've
 
 Yes, I made a TikTok. It showcases my prototype communicating and I was really proud to get everything working.
 
-<html>
-    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@joesamela/video/6933018332497005830" data-video-id="6933018332497005830" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@joesamela" href="https://www.tiktok.com/@joesamela">@joesamela</a> <p>Experimenting with LoRa radio! <a title="radio" target="_blank" href="https://www.tiktok.com/tag/radio">##radio</a> <a title="engineering" target="_blank" href="https://www.tiktok.com/tag/engineering">##engineering</a></p> <a target="_blank" title="♬ original sound - joesamela" href="https://www.tiktok.com/music/original-sound-6933018308660759301">♬ original sound - joesamela</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-</html>
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@joesamela/video/6933018332497005830" data-video-id="6933018332497005830" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@joesamela" href="https://www.tiktok.com/@joesamela">@joesamela</a> <p>Experimenting with LoRa radio! <a title="radio" target="_blank" href="https://www.tiktok.com/tag/radio">##radio</a> <a title="engineering" target="_blank" href="https://www.tiktok.com/tag/engineering">##engineering</a></p> <a target="_blank" title="♬ original sound - joesamela" href="https://www.tiktok.com/music/original-sound-6933018308660759301">♬ original sound - joesamela</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
