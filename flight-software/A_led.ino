@@ -2,7 +2,8 @@
 
 CRGB leds[1];
 void setup_led() {
-  FastLED.addLeds<NEOPIXEL, 2>(leds, 1); 
+  Serial.println("INITIALIZAING: LED...");
+  FastLED.addLeds<NEOPIXEL, 0>(leds, 1);
 }
 
 void showcolor(String color) {

@@ -29,7 +29,7 @@ void setup() {
   digitalWrite(RFM95_RST, HIGH);
 
   // Initialize Serial
-  Serial.begin(9600);
+  Serial.begin(115200);
   delay(100);
   Serial.println("Phi telemetry Ground Station starting...");
 
@@ -87,10 +87,10 @@ void loop() {
       digitalWrite(LED, LOW);
       showcolor("magenta");
 
-      DynamicJsonDocument telemetry(200);
+      DynamicJsonDocument telemetry(500);
       deserializeJson(telemetry, (char*)buf);
 
-      DynamicJsonDocument datagram(200);
+      DynamicJsonDocument datagram(500);
       datagram["ts"] = millis();
       datagram["rssi"] = rf95.lastRssi();
       datagram["fc"] = telemetry;

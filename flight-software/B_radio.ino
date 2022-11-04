@@ -2,20 +2,20 @@
 #include <RH_RF95.h>
 #include <ArduinoJson.h>
 
-#define LED 2
+#define LED 3
 
 #define RFM95_CS 15
 #define RFM95_RST 16
-#define RFM95_INT 5
+#define RFM95_INT 10
 #define RF95_FREQ 915.0
 
 String telemetry;
-int packetnum = 0;
 
 // Singleton instance of the radio driver
 RH_RF95 rf95(RFM95_CS, RFM95_INT);
 
 void setup_radio() {
+  Serial.println("INITIALIZAING: Radio...");
   // Declare pins
   pinMode(LED, OUTPUT);
   digitalWrite(LED,HIGH);   
@@ -42,16 +42,4 @@ void setup_radio() {
   // If you are using RFM95 / 96/97/98 modules using the transmitter pin PA_BOOST, then
   // you can set transmission powers from 5 to 23 dBm:
   rf95.setTxPower(23, false);
-}
-
-void build_telemetry_datagram() {
-  packetnum += 1;
-  DynamicJsonDocument datagram(200);
-  datagram["id"] = packetnum;
-  datagram["dt"] = millis();
-  datagram["ax"] = 48.756083;
-  datagram["ay"] = 2.302038;
-  datagram["az"] = 57.098342;
-  telemetry = "";
-  serializeJson(datagram, telemetry);
 }
